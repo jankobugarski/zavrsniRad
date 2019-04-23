@@ -1,0 +1,66 @@
+header{
+
+   max-width: 100%;
+   height: 60px; 
+   background-color: gray;
+   display: flex;
+}
+header div{
+width: 33%;
+margin-left: 60px;
+margin-right: 60px;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: #ffcc80;
+text-align: center;
+padding-top: 5px;
+border: 1px solid #ff9900;
+border-radius: 50px;
+
+
+
+
+
+}
+
+
+header div a{
+
+    color: grey;
+}
+header div a:hover{
+
+    text-decoration: none;
+    color: black;
+}
+footer{
+     max-width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+main {
+background-image: url(../images/filmska-traka-1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 600px;
+}
+main{
+    position: relative;
+}
+
+section h1{
+
+    color: #ffb980;
+    
+    position: absolute;
+    margin-left: 70px;
+    margin-right: 50px;
+    
+    
+    margin-top: 200px;
+     font-size: 55px;
+     font-family: 'Source Code Pro', monospace;
+     font-weight: bold;
+    
+}
