@@ -19,6 +19,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
  
  let pretraga = '';
  let rezultat = document.getElementById('pretraga').value;
+ 
 
  for(let i = 0; i < data.length; i++) {
  if(data[i].naziv.includes(rezultat)) {
