@@ -11,13 +11,13 @@
     <script src="bootrap1/jquery.js"></script>
     <script src="bootrap1/bootstrap.min.js"></script>
     
-    <script src="js/main.js"></script>
+    <script src="js/pretraga.js"></script>
 </head>
 <body>
-   <div class="container">
+   <div class="container greed">
 
 <header>
-<div> <a href="main.html"> NASLOVNA </a></div>
+<div> <a href="index.html"> NASLOVNA </a></div>
 
 <div> <a href="pretraga.html"> PRETRAGA</a> </div>
 <div> <a href="dodajFilm.html">  DODAJ FILM</a> </div>
@@ -25,9 +25,26 @@
 
 
 </header>
-<main></main>
+<main id="search">
 
-<footer></footer>
+    <fieldset>
+    <label for="">Pretraga baze po nazivu </label>
+<input type="text" id="pretraga" name="pretraga">
+</fieldset>
+<div class="dugme">
+
+<button id="levi"> od najstarijeg</button>
+<button id="desni">od najnovijeg</button>
+</div>
+
+<div id="filmovi"></div>
+
+
+</main>
+
+<footer>
+
+</footer>
     
 </body>
 </html>
