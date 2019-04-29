@@ -1,114 +1,117 @@
 fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
- .then(res => res.json())
- .then(data => {
+    .then(res => res.json())
+    .then(data => {
 
- let sablon = '';
+        let sablon = '';
 
- // ispisivanje svih objekata
- for(let i = 0; i < data.length; i++) {
- sablon += `<div class='okvirFilma'>
+        // ispisivanje svih objekata
+        for (let i = 0; i < data.length; i++) {
+            sablon += `<div class='okvirFilma'>
  <h4>${data[i].naziv}</h4>
  <h5>${data[i].godina}</h5>
  <img src='${data[i].slika}' class="slika" >
  </div>`;
- }
+        }
 
- document.getElementById('filmovi').innerHTML=sablon ;
- // pretraga po nazivu
- document.addEventListener('keyup',function() {
- 
- let pretraga = '';
- let rezultat = document.getElementById('pretraga').value;
- 
+        document.getElementById('filmovi').innerHTML = sablon;
+        // pretraga po nazivu
+        document.addEventListener('keyup', function () {
 
- for(let i = 0; i < data.length; i++) {
- if(data[i].naziv.includes(rezultat)) {
- pretraga += `<div class="okvirFilma">
+            let pretraga = '';
+            let rezultat = document.getElementById('pretraga').value;
+            
+            
+   
+
+
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].naziv.includes(rezultat)) {
+                    pretraga += `<div class="okvirFilma">
  <h4>${data[i].naziv}</h4>
  <h5>${data[i].godina}</h5>
  <img src='${data[i].slika}' class="slika">
  </div>`;
- }
- }
- document.getElementById('filmovi').innerHTML=pretraga;
- });
+                }
+            }
+            document.getElementById('filmovi').innerHTML = pretraga;
+        });
 
- // sortiranje od najstarijeg
- const levi = document.getElementById("levi")
- levi.addEventListener("click",function() {
+        // sortiranje od najstarijeg
+        const levi = document.getElementById("levi")
+        levi.addEventListener("click", function () {
 
- const godine = [];
+            const godine = [];
 
- for(i = 0; i < data.length; i++) {
- godine.push(data[i]);
- }
+            for (i = 0; i < data.length; i++) {
+                godine.push(data[i]);
+            }
 
- function compare(a,b) {
- if (a.godina < b.godina)
- return -1;
- if (a.godina > b.godina)
- return 1;
- return 0;
- }
- 
- godine.sort(compare);
+            function compare(a, b) {
+                if (a.godina < b.godina)
+                    return -1;
+                if (a.godina > b.godina)
+                    return 1;
+                return 0;
+            }
 
- let sablon1 = '';
+            godine.sort(compare);
 
- for(let i = 0; i < godine.length; i++) {
- sablon1 += `<div class='okvirFilma'>
+            let sablon1 = '';
+
+            for (let i = 0; i < godine.length; i++) {
+                sablon1 += `<div class='okvirFilma'>
  <h4>${godine[i].naziv}</h4>
  <h5>${godine[i].godina}</h5>
  <img src='${godine[i].slika}' class="slika" >
  
  </div>`;
- }
+            }
 
- document.getElementById('filmovi').innerHTML=sablon1;
- })
+            document.getElementById('filmovi').innerHTML = sablon1;
+        })
 
- // sortiranje od najnovijeg
+        // sortiranje od najnovijeg
 
- const desni = document.getElementById("desni")
- desni.addEventListener('click', function() {
+        const desni = document.getElementById("desni")
+        desni.addEventListener('click', function () {
 
- const godine = [];
+            const godine = [];
 
- for(i = 0; i < data.length; i++) {
- godine.push(data[i]);
- }
+            for (i = 0; i < data.length; i++) {
+                godine.push(data[i]);
+            }
 
- function compare(a,b) {
- if (a.godina < b.godina)
- return -1;
- if (a.godina > b.godina)
- return 1;
- return 0;
- }
- 
- godine.sort(compare);
+            function compare(a, b) {
+                if (a.godina < b.godina)
+                    return -1;
+                if (a.godina > b.godina)
+                    return 1;
+                return 0;
+            }
 
- let sablon = '';
+            godine.sort(compare);
 
- for(let i = godine.length - 1; i >= 0; i--) {
- sablon += `<div class='okvirFilma'>
+            let sablon = '';
+
+            for (let i = godine.length - 1; i >= 0; i--) {
+                sablon += `<div class='okvirFilma'>
  <h4>${godine[i].naziv}</h4>
  <h5>${godine[i].godina}</h5>
  <img src='${godine[i].slika}' class="slika">
  </div>`;
- }
+            }
 
- document.getElementById('filmovi').innerHTML=sablon;
- })
+            document.getElementById('filmovi').innerHTML = sablon;
+        })
 
- 
 
- 
 
- localStorage.setItem('naslov', naslov);
- localStorage.setItem('godina', godina);
- localStorage.setItem('slika', slika);
- 
 
- })
+
+        localStorage.setItem('naslov', naslov);
+        localStorage.setItem('godina', godina);
+        localStorage.setItem('slika', slika);
+
+
+    })
 

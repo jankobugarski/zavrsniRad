@@ -53,7 +53,7 @@ main{
 
 section h1{
 
-    color: #ffb980;
+    color:#F6A80C;
     
     position: absolute;
     margin-left: 70px;
@@ -97,7 +97,9 @@ flex-wrap: wrap;
 }
 label{
 
-    font-size: 30px;
+    font-size: 25px;
+    color: #F6A80C;
+    margin-top: 15px;
 }
 
 fieldset {
@@ -110,6 +112,7 @@ input{
 border: 1px solid black;
     width: 350px;
     border-radius: 20px;
+    height: 30px;
 }
 button {
 
@@ -119,6 +122,7 @@ button {
     background-color: gray;
     width: 100px;
     height: 100px;
+    color: #F6A80C;
    
     
 }
