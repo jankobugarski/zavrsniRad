@@ -14,10 +14,12 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
         }
 
         document.getElementById('filmovi').innerHTML = sablon;
-        // pretraga po nazivu
+        // pretraga filma po nazivu
         document.addEventListener('keyup', function () {
 
             let pretraga = '';
+
+            
             let rezultat = document.getElementById('pretraga').value;
             
             
@@ -108,7 +110,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
 
 
-        localStorage.setItem('naslov', naslov);
+        localStorage.setItem('naziv', naziv);
         localStorage.setItem('godina', godina);
         localStorage.setItem('slika', slika);
 

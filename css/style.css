@@ -186,3 +186,125 @@ main.dodaj{
     background-size: cover;
     height: 600px;
 }
+
+
+@media only screen and (max-width: 792px){
+
+header{
+    max-width:792px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: gray;
+}
+header div {
+
+    width: auto;
+    border-radius: 0%;
+}
+main.glavni{
+
+    background-size:cover; 
+}
+
+footer {
+
+    max-width: 792;
+}
+
+
+input {
+
+    max-width: 200px;
+}
+
+.dugme {
+    
+    margin-left: 130px;
+
+    
+}
+button.dugme{
+    width: 30px;
+    height: 30px;
+}
+
+fieldset {
+    margin-left: 100px;
+}
+
+img#pocetna{
+
+    left: 10px;
+    top:10px;
+    max-width:400px;
+}
+
+form{
+
+    position: absolute;
+    top:400px;
+    left: 10px;
+}
+
+button#posalji{ height: 50px;
+    width:50px;  }
+
+    form input {
+
+        width: 180px;
+        height: 30px;
+    }
+
+     
+
+     main.dodaj {
+         height: 1000px;
+     }
+
+     
+
+     
+
+    }
+
+
+    @media only screen and (max-width: 1300px){
+
+img#pocetna{
+
+    left: 10px;
+    top:10px;
+    max-width:400px;
+}
+
+form{
+
+    position: absolute;
+    top:400px;
+    left: 10px;
+}
+
+button#posalji{ height: 50px;
+    width:50px;  }
+
+    form input {
+
+        width: 180px;
+        height: 30px;
+    }
+
+     
+
+     main.dodaj {
+         height: 1000px;
+     }
+
+     
+
+     
+
+
+
+    }
