@@ -217,6 +217,7 @@ footer {
 input {
 
     max-width: 200px;
+    margin-left: 10px;
 }
 
 .dugme {
@@ -231,14 +232,14 @@ button.dugme{
 }
 
 fieldset {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 img#pocetna{
 
     left: 10px;
     top:10px;
-    max-width:350px;
+    max-width:320px;
 }
 
 form{
@@ -276,7 +277,7 @@ img#pocetna{
 
     left: 10px;
     top:10px;
-    max-width:350px;
+    max-width:320px;
 }
 
 form{
