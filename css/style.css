@@ -216,7 +216,7 @@ footer {
 
 input {
 
-    max-width: 200px;
+    max-width: 250px;
     margin-left: 10px;
 }
 
@@ -229,6 +229,21 @@ input {
 button.dugme{
     width: 30px;
     height: 30px;
+    
+}
+
+button#desni{
+    width: 85px;
+    height:75px;
+    border-radius:10px;
+    font-size: 15px;
+}
+
+button#levi{
+    width: 85px;
+    height:75px;
+    border-radius:10px;
+    font-size: 15px;
 }
 
 fieldset {
