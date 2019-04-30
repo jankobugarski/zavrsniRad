@@ -238,7 +238,7 @@ img#pocetna{
 
     left: 10px;
     top:10px;
-    max-width:400px;
+    max-width:350px;
 }
 
 form{
@@ -302,7 +302,7 @@ button#posalji{ height: 50px;
      }
 
      section h1{
-         font-size: 20px;
+         font-size: 30px;
      }
 
      
