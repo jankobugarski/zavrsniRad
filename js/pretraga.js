@@ -21,13 +21,18 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
             
             let rezultat = document.getElementById('pretraga').value;
-            
+
+           
+                
             
    
 
 
             for (let i = 0; i < data.length; i++) {
-                if (data[i].naziv.includes(rezultat)) {
+
+                let velikaSlova = data[i].naziv.toUpperCase();
+                rezultat = rezultat.toUpperCase();
+                if (velikaSlova.includes(rezultat)) {
                     pretraga += `<div class="okvirFilma">
  <h4>${data[i].naziv}</h4>
  <h5>${data[i].godina}</h5>
