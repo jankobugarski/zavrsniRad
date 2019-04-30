@@ -222,7 +222,7 @@ input {
 
 .dugme {
     
-    margin-left: 130px;
+    margin-left: 60px;
 
     
 }
@@ -235,15 +235,15 @@ button.dugme{
 button#desni{
     width: 85px;
     height:75px;
-    border-radius:10px;
-    font-size: 15px;
+    border-radius:8px;
+    font-size: 13px;
 }
 
 button#levi{
     width: 85px;
     height:75px;
-    border-radius:10px;
-    font-size: 15px;
+    border-radius:8px;
+    font-size: 13px;
 }
 
 fieldset {
