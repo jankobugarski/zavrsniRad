@@ -188,7 +188,7 @@ main.dodaj{
 }
 
 
-@media only screen and (max-width: 792px){
+@media only screen and (max-width: 764px){
 
 header{
     max-width:792px;
@@ -220,9 +220,9 @@ input {
     margin-left: 10px;
 }
 
-.dugme {
+div.dugme {
     
-    margin-left: 25px;
+    margin-left: 100px;
 
     
 }
@@ -233,7 +233,7 @@ button.dugme{
 }
 
 button#desni{
-    width: 85px;
+    width: 90px;
     height:75px;
     border-radius:8px;
     font-size: 12px;
@@ -241,7 +241,7 @@ button#desni{
 }
 
 button#levi{
-    width: 85px;
+    width: 90px;
     height:75px;
     border-radius:8px;
     font-size: 12px;
@@ -328,3 +328,20 @@ button#posalji{ height: 50px;
 
 
     }
+
+
+    @media only screen and (max-width: 991px){
+
+
+div.dugme{
+
+    margin-left: 200px;
+}
+
+
+
+    }
+
+   
+
+        
