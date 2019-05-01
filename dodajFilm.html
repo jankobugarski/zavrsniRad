@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="bootrap1/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     
-    <script src="bootrap1/jquery.js"></script>
-    <script src="bootrap1/bootstrap.min.js"></script>
-    
-    <script src="js/main.js"></script>
+   
 </head>
 <body>
    <div class="container">
@@ -33,22 +30,25 @@
 </div>
 
 <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST">
-
-<label for="naziv" > <p>  NAZIV FILMA :</p></label> <br>
-<input type="text" id="naziv" name="naziv"> <br> 
-<label for="godina"><p> GODINA :</p></label> <br>
-<input type="text" id="godina" name="godina"> <br>
-<label for="slika"><p> SLIKA URL :</p></label><br>
-<input type="text" name="slika " id="slika"> <br> 
-<button type="submit" id="posalji"> OK</button>
-
-
+    <label for="naziv"><p> Naziv filma:</p></label> <br>
+    <input type="text" name="naziv" id="naziv"> <br>
+    <label for="godina"> <p>Godina:</p> </label> <br>
+    <input type="text" name="godina" id="godina"> <br>
+    <label for="slika"> <p> Slika URL:</p></label> <br>
+    <input type="text" name="slika" id="slika"> <br>
+    
+    <button type="submit" id="posalji" value="submit">OK</button>
 </form>
 
 
 </main>
 
 <footer></footer>
+<script src="bootrap1/jquery.js"></script>
+<script src="bootrap1/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/noviFilm.js"></script>
 
     
 </body>

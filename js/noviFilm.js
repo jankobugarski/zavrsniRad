@@ -2,9 +2,8 @@ let poljeZaUrl = document.getElementById('slika')
 let pocetnaSlika=document.getElementById('pocetna')
 
 
-poljeZaUrl.addEventListener('input',function() {
-    pocetnaSlika.src=poljeZaUrl.value
-    
+document.getElementById('slika').addEventListener('input',function() {
+   pocetnaSlika.src = poljeZaUrl.value ;
 })
 
 
