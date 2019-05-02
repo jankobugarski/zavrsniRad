@@ -115,9 +115,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
 
 
-        localStorage.setItem('naziv', naziv);
-        localStorage.setItem('godina', godina);
-        localStorage.setItem('slika', slika);
+      
 
 
     })
