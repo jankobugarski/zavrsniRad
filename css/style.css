@@ -293,8 +293,12 @@ form{
     left: 10px;
 }
 
-button#posalji{ height: 50px;
-    width:50px;  }
+button#posalji{
+    
+    height: 50px;
+    width:60px;
+    text-align:  center ; 
+}
 
     form input {
 
@@ -315,7 +319,7 @@ button#posalji{ height: 50px;
     }
     button#god{
         margin-left:50px;
-        width: 60px;
+        width: 80px;
         height:40px;
         background-color: rgb(65, 80, 80);
         text-align: center;
