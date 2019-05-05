@@ -38,7 +38,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
  <h5>${data[i].godina}</h5>
  <img src='${data[i].slika}' class="slika">
  </div>`;
- console.log(pretraga)
+                    console.log(pretraga)
                 }
             }
             document.getElementById('filmovi').innerHTML = pretraga;
@@ -49,9 +49,9 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
         var dugme = document.getElementById("god");
         dugme.addEventListener('click', function () {
 
-            let pretraga='';
+            let pretraga = '';
 
- 
+
             for (i = 0; i < data.length; i++) {
                 let godinaFilma = data[i].godina;
                 let godinaP = document.getElementById("godina").value;

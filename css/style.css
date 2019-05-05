@@ -11,10 +11,10 @@ margin-left: 60px;
 margin-right: 60px;
 margin-top: 10px;
 margin-bottom: 10px;
-background-color: #F30FEF;
+background-color:#66a3ff ;
 text-align: center;
 padding-top: 5px;
-border: 1px solid #F30FEF;
+border: 1px solid #66a3ff;
 border-radius: 50px;
 
 
@@ -27,6 +27,7 @@ border-radius: 50px;
 header div a{
 
     color:black;
+    font-weight: 600;
 }
 header div a:hover{
 
@@ -42,10 +43,12 @@ footer{
 
 
 main.glavni {
-background-image: url(../images/filmska-traka-1.jpg);
+background-image: url(../images/films-clip-movie-tape-5.png);
 background-size: cover;
 background-repeat: no-repeat;
 height: 600px;
+opacity: 0.9;
+
 
 
 }
@@ -56,11 +59,12 @@ main{
 
 section h1{
 
-    color :#DD0ADA;
+    color :#4040bf;
     
     position: absolute;
     left: 70px;
     right: 50px;
+    
     
     
     top: 200px;
@@ -81,9 +85,9 @@ flex-wrap: wrap;
     border: 3px solid black;
     position: relative;
     padding: 10px;
-    background-color:#C6A7C5;
+    background-color: #3385ff;
     width: 300px;
-    height: 500px;
+    height: 420px;
     margin: 10px auto;
   
 
@@ -101,7 +105,7 @@ flex-wrap: wrap;
 label{
 
     font-size: 25px;
-    color: #F30FEF;
+    color:#3385ff;
     margin-top: 15px;
     font-weight: 700;
     padding-top: 40px;
@@ -127,7 +131,7 @@ button {
     background-color: rgb(175, 172, 172);
     width: 100px;
     height: 100px;
-    color: #DD0ADA;
+    color: #66a3ff;
     font-size: 18px;
     font-weight: 550;
    
@@ -162,7 +166,7 @@ button#posalji{
     width: 100px;
     height: 50px;
 
-    background-color:#F30FEF ;
+    background-color:#66a3ff ;
     color: black;
     text-align: center;
 }
@@ -194,7 +198,7 @@ main.dodaj{
 
     background-color:black;
     position: relative;
-    background-image:url(../images/soft-light-gray-background_41txvnyy__F0000.png);
+    background-image:url(../images/Dark-Gray-Backgrounds-Desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -202,6 +206,7 @@ main.dodaj{
 button#levi{
 
    background-color:rgb(65, 80, 80);
+   
 }
 button#desni{
 
