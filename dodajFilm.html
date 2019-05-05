@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,50 +8,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootrap1/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    
-   
+
+
 </head>
+
 <body>
-   <div class="container">
+    <div class="container">
 
-<header>
-<div> <a href="index.html"> NASLOVNA </a></div>
+        <header>
+            <div> <a href="index.html"> NASLOVNA </a></div>
 
-<div> <a href="pretraga.html"> PRETRAGA</a> </div>
-<div> <a href="dodajFilm.html">  DODAJ FILM</a> </div>
-
-
-
-</header>
-<main class="dodaj">
-<div>
-<img src="./images/shutterstock_97702346.jpg" alt="" id="pocetna">
+            <div> <a href="pretraga.html"> PRETRAGA</a> </div>
+            <div> <a href="dodajFilm.html"> DODAJ FILM</a> </div>
 
 
-</div>
 
-<form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST">
-    <label for="naziv"> Naziv filma:</label> <br>
-    <input type="text" name="naziv" id="naziv"> <br>
-    <label for="godina"> Godina: </label> <br>
-    <input type="text" name="godina" id="godina"> <br>
-    <label for="slika">  Slika URL:</label> <br>
-    <input type="text" name="slika" id="slika"> <br>
-    
-    <button type="submit" id="posalji" value="submit">OK</button>
-</form>
+        </header>
+        <main class="dodaj">
+            <div>
+                <img src="./images/shutterstock_97702346.jpg" alt="" id="pocetna">
 
 
-</main>
+            </div>
 
-<footer></footer>
-</div>
-<script src="bootrap1/jquery.js"></script>
-<script src="bootrap1/bootstrap.min.js"></script>
+            <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST">
+                <label for="naziv"> Naziv filma:</label> <br>
+                <input type="text" name="naziv" id="naziv"> <br>
+                <label for="godina"> Godina: </label> <br>
+                <input type="text" name="godina" id="godina"> <br>
+                <label for="slika"> Slika URL:</label> <br>
+                <input type="text" name="slika" id="slika"> <br>
 
-<script src="js/main.js"></script>
-<script src="js/noviFilm.js"></script>
+                <button type="submit" id="posalji" value="submit">OK</button>
+            </form>
 
-    
+
+        </main>
+
+        <footer></footer>
+    </div>
+    <script src="bootrap1/jquery.js"></script>
+    <script src="bootrap1/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/noviFilm.js"></script>
+
+
 </body>
+
 </html>

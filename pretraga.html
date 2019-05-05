@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="bootrap1/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
-    <script src="bootrap1/jquery.js"></script>
-    <script src="bootrap1/bootstrap.min.js"></script>
-
-    <script src="js/pretraga.js"></script>
+    
 </head>
 
 <body>
-    <div class="container greed">
+    <div class="container">
 
         <header>
             <div> <a href="index.html"> NASLOVNA </a></div>
@@ -27,12 +24,18 @@
 
 
         </header>
-        <main id="search" class="glavni">
+        <main id="search" class="dodaj">
 
             <fieldset>
                 <label for="pretraga">PRETRAGA BAZE PO NAZIVU FILMA</label>
                 <input type="text" id="pretraga" name="pretraga">
             </fieldset>
+            <fieldset>
+                <label for="godina">PRETRAGA BAZE PO GODINI</label>
+                <input type="text" id="godina" name="godina">
+                <button  id ='god' type="submit">trazi</button>
+            </fieldset>
+
             <div class="dugme">
 
                 <button id="levi"> od najstarijeg</button>
@@ -45,13 +48,17 @@
         </main>
 
         <footer>
-            
-        
+
+
 
 
 
         </footer>
-        </div>
+    </div>
+    <script src="bootrap1/jquery.js"></script>
+    <script src="bootrap1/bootstrap.min.js"></script>
+
+    <script src="js/pretraga.js"></script>
 
 </body>
 

@@ -2,7 +2,7 @@ header{
 
    max-width: 100%;
    height: 60px; 
-   background-color: gray;
+   background-color: rgb(65, 80, 80);
    display: flex;
 }
 header div{
@@ -36,15 +36,18 @@ header div a:hover{
 footer{
      max-width: 100%;
     height: 100px;
-    background-color: gray;
+    background-color:rgb(65, 80, 80);
     
 }
+
 
 main.glavni {
 background-image: url(../images/filmska-traka-1.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 height: 600px;
+
+
 }
 main{
     position: relative;
@@ -100,13 +103,14 @@ label{
     font-size: 25px;
     color: #F30FEF;
     margin-top: 15px;
-    font-weight: 600;
+    font-weight: 700;
+    padding-top: 40px;
 }
 
 fieldset {
 
     margin-left: 200px;
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 input{
@@ -131,8 +135,10 @@ button {
 }
 .dugme {
     margin-left: 400px;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 400px;
+ }
 
 
     form {
@@ -159,12 +165,18 @@ button#posalji{
     background-color:#F30FEF ;
     color: gray;
 }
+form{
+    margin-top: 50px;
+}
+
 form input{
 
     width: 400px;
     height: 45px;
 }
-
+form label {
+padding: 0px;
+}
 
 
 img#pocetna{
@@ -186,6 +198,18 @@ main.dodaj{
     background-size: cover;
     height: 600px;
 }
+button#levi{
+
+   background-color:rgb(65, 80, 80);
+}
+button#desni{
+
+    background-color:rgb(65, 80, 80);
+ }
+ input#godina{
+     width: 100px;
+     text-align: center;
+ }
 
 
 @media only screen and (max-width: 764px){
@@ -196,12 +220,12 @@ header{
     flex-direction: column;
     align-items: center;
     height: auto;
-    background-color: gray;
+    background-color:rgb(65, 80, 80);
 }
 header div {
 
     width: auto;
-    border-radius: 0%;
+    border-radius: 30%;
 }
 main.glavni{
 
@@ -211,6 +235,7 @@ main.glavni{
 footer {
 
     max-width: 792;
+  background-color:    rgb(65, 80, 80)
 }
 
 
@@ -222,7 +247,8 @@ input {
 
 div.dugme {
     
-    margin-left: 100px;
+    
+    width: 300px;
 
     
 }
@@ -285,6 +311,12 @@ button#posalji{ height: 50px;
 
      
 
+    }
+    button#god{
+        margin-left:50px;
+        width: 60px;
+        height:40px;
+        background-color: rgb(65, 80, 80);
     }
 
 

@@ -19,13 +19,13 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
             let pretraga = '';
 
-            
+
             let rezultat = document.getElementById('pretraga').value;
 
-           
-                
-            
-   
+
+
+
+
 
 
             for (let i = 0; i < data.length; i++) {
@@ -38,11 +38,38 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
  <h5>${data[i].godina}</h5>
  <img src='${data[i].slika}' class="slika">
  </div>`;
+ console.log(pretraga)
                 }
             }
             document.getElementById('filmovi').innerHTML = pretraga;
         });
 
+
+        // pretraga po godini 
+        var dugme = document.getElementById("god");
+        dugme.addEventListener('click', function () {
+
+            let pretraga='';
+
+ 
+            for (i = 0; i < data.length; i++) {
+                let godinaFilma = data[i].godina;
+                let godinaP = document.getElementById("godina").value;
+
+
+                if (godinaFilma == godinaP) {
+
+                    pretraga += `<div class="okvirFilma">
+        <h4>${data[i].naziv}</h4>
+        <h5>${data[i].godina}</h5>
+        <img src='${data[i].slika}' class="slika">
+        </div>`;
+
+
+                }
+            }
+            document.getElementById('filmovi').innerHTML = pretraga;
+        });
         // sortiranje od najstarijeg
         const levi = document.getElementById("levi")
         levi.addEventListener("click", function () {
@@ -115,7 +142,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
 
 
-      
+
 
 
     })
