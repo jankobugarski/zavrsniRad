@@ -24,6 +24,7 @@ border-radius: 50px;
 }
 
 
+
 header div a{
 
     color:black;
@@ -46,7 +47,7 @@ section {
 background-image: url(../images/movie-tape-background-6.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-height: 600px;
+height: 700px;
 max-width: 100%;
 margin: 0 auto;
 position: relative;
@@ -70,12 +71,14 @@ section h3{
     color :#4040bf;
     
     position: absolute;
-    left: 70px;
+    top:200px;
+    left: 120px;
     right: 50px;
+
     
     
     
-    top: 200px;
+    
      font-size: 55px;
      font-family: 'Source Code Pro', monospace;
      font-weight: 800;
@@ -224,9 +227,19 @@ button#desni{
      width: 100px;
      text-align: center;
  }
-
+ button#god{
+    margin-left:50px;
+    width: 80px;
+    height:40px;
+    background-color: rgb(65, 80, 80);
+    text-align: center;
+  }
 
 @media only screen and (max-width: 764px){
+
+    
+ 
+
 
 header{
     max-width:792px;
@@ -241,10 +254,10 @@ header div {
     width: auto;
     border-radius: 30%;
 }
-.okvir{
 
-    background-size:cover; 
-}
+
+     
+
 
 footer {
 
@@ -324,21 +337,21 @@ button#posalji{
      main.dodaj {
          height: 1000px;
      }
+      
 
+     section h3 {
+        font-size: 30px; }    
+    
      
 
-     
+    
 
-    }
-    button#god{
-        margin-left:50px;
-        width: 80px;
-        height:40px;
-        background-color: rgb(65, 80, 80);
-        text-align: center;
-    }
+    
+    
+    
 
 
+}
 
     @media only screen and (max-width: 1300px){
 
@@ -371,28 +384,30 @@ button#posalji{ height: 50px;
          height: 1000px;
      }
 
-     section h3{
-         font-size: 30px;
+     
      }
 
      
 
 
 
-    }
+    
 
 
     @media only screen and (max-width: 991px){
 
 
-div.dugme{
+        div.dugme{
+        
+            margin-left: 200px;
+        }
+        
+        
+        }
 
-    margin-left: 200px;
-}
-
-
-
-    }
+        
+        
+            
 
    
 
