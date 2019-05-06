@@ -190,6 +190,7 @@ button#posalji{
 }
 form{
     margin-top: 50px;
+    margin-right: 15px;
 }
 
 form input{
@@ -324,6 +325,7 @@ form{
     position: absolute;
     top:400px;
     left: 10px;
+    width: 320px;
 }
 
 button#posalji{
@@ -408,9 +410,15 @@ button#posalji{ height: 50px;
         
             margin-left: 200px;
         }
-        
-        
+      
         }
+
+        
+            
+    
+       
+        
+        
 
         
         
