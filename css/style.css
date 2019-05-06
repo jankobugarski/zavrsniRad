@@ -42,11 +42,14 @@ footer{
 }
 
 
-main.glavni {
+section {
 background-image: url(../images/movie-tape-background-6.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-height: 600px;
+height: 500px;
+max-width: 100%;
+margin: 0 auto;
+position: relative;
 
 
 
@@ -54,12 +57,15 @@ height: 600px;
 
 
 }
-main{
-    position: relative;
+
+   main.glavni {
+
+    max-width: 100%;
+   } 
     
-}
 
-section h1{
+
+section h3{
 
     color :#4040bf;
     
@@ -235,7 +241,7 @@ header div {
     width: auto;
     border-radius: 30%;
 }
-main.glavni{
+.okvir{
 
     background-size:cover; 
 }
@@ -365,7 +371,7 @@ button#posalji{ height: 50px;
          height: 1000px;
      }
 
-     section h1{
+     section h3{
          font-size: 30px;
      }
 
